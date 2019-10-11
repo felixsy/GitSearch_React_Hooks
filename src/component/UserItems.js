@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function UserItems(props) {
-    const { avatar_url, login } = props.user;
+
+const UserItems =({user})=> {
+    const { avatar_url, login } = user;
     return (
         <div className="col-sm-4 mt-3 text-center">
             <div className="card card-body">
@@ -20,6 +22,10 @@ function UserItems(props) {
             </div>
         </div>
     )
+}
+
+UserItems.propType={
+    user: PropTypes.object.isRequired
 }
 
 export default UserItems

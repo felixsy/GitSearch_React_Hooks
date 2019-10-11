@@ -1,15 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Useritems from './UserItems';
 import Spinner from './Spinner';
 import PropTypes from 'prop-types';
 
-export default class User extends Component {
-    static propType ={
-        user: PropTypes.object.isRequired,
-    }
-
-    render() {
-        if(this.props.loading === true) {
+ const Users =(props)=> {
+     const { loading, users  } = props
+        if(loading === true) {
             return (
                 <div className="container">
                     <div className=" text-center mt-5 col-sm-6 mx-auto">
@@ -23,7 +19,7 @@ export default class User extends Component {
             return (
                 <div className="container">
                     <div className="row">
-                        {this.props.users.map(user => (
+                        {users.map(user => (
                             <Useritems key={user.id} user={user}>
 
                             </Useritems>
@@ -32,5 +28,10 @@ export default class User extends Component {
                 </div>
             )
         }
-    }
 }
+
+Users.propType ={
+    user: PropTypes.object.isRequired,
+}
+
+export default Users;
