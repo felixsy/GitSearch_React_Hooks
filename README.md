@@ -1,14 +1,16 @@
 This is Github User Search App, designed with React Js and GITHUB API, bootstrap, axios
 
-A simillar project  designed earlier with Only Vanila Javascript, HTML and CSS
+A simillar project designed earlier with Only Vanila Javascript, HTML and CSS,
+
+React and New React Hooks was was also implemented in this version 1.0.1,
+
+See and test live application on https://gituserfinder2019.netlify.com/
 
 What do you think?
 
 Warm Regard
 
 Felix Jnr. Odalonu
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
